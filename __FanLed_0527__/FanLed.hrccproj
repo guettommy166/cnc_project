@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{73da1757-0caf-4ca5-ac4c-f289765a1bae}</ProjectGuid>
+    <ProjectType>HRCC</ProjectType>
+    <ChipType>HR7P153P4SD</ChipType>
+    <ChipConfig>40E7</ChipConfig>
+    <TargetPath>debug\</TargetPath>
+    <HiccInclude>
+    </HiccInclude>
+    <HiccError>False</HiccError>
+    <PredefinitionMacro>
+    </PredefinitionMacro>
+    <FDD>True</FDD>
+    <LFUNC>True</LFUNC>
+    <USPTR>True</USPTR>
+    <LPTR>True</LPTR>
+    <FA>True</FA>
+    <HS>True</HS>
+    <HrccError>False</HrccError>
+    <HrccOptimizationSelect>O0</HrccOptimizationSelect>
+    <HrccExtraOption>
+    </HrccExtraOption>
+    <BAS>True</BAS>
+    <ARGU>True</ARGU>
+    <SD>True</SD>
+    <HrcoError>False</HrcoError>
+    <HrcoExtraOption>
+    </HrcoExtraOption>
+    <HasmInclude>
+    </HasmInclude>
+    <HasmError>False</HasmError>
+    <HasmList>False</HasmList>
+    <OBJ>True</OBJ>
+    <HasmMap>False</HasmMap>
+    <CS>True</CS>
+    <MP>False</MP>
+    <OutputMessageType>Errors only</OutputMessageType>
+    <RadixFormat>hex</RadixFormat>
+    <NT>True</NT>
+    <OL>True</OL>
+    <HlinkError>False</HlinkError>
+    <HlinkMap>False</HlinkMap>
+    <HlinkList>False</HlinkList>
+    <HlinkExtraOption>
+    </HlinkExtraOption>
+    <AssemblyName>HR7P153P4SD-20200505PF</AssemblyName>
+    <Name>TestFanLed</Name>
+    <RootNamespace>HR7P153P4SD-20200505PF</RootNamespace>
+    <ToolChain>HRCC v1.0</ToolChain>
+    <Crystal>8</Crystal>
+    <PreprocessSwitch>False</PreprocessSwitch>
+    <INTVECT>False</INTVECT>
+    <OLDCM>False</OLDCM>
+    <STDLIB>False</STDLIB>
+    <MATHLIB>False</MATHLIB>
+    <REMVAR>False</REMVAR>
+    <HasmExtraOption />
+    <TMPM>True</TMPM>
+    <EraseOption>NoErase</EraseOption>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>debug\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ADCharge.c">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BatStatus.c">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Charge.c">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GetsysDisCharge.c">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GetsysStatus.c">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Init.c">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="KeyScan.c">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Led.c">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Main.c">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ADCheck.c">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PreBatLv.c">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Motor.c">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sleep.c">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Init.h">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(registry:HKEY_CURRENT_USER\Software\ICHAIER\HRIDE4.0\1.0_Config\MSBuild\SafeImports@HRCC)" />
+</Project>
